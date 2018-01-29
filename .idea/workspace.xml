@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f40be0a-7b97-42ca-8997-2c263cfeb7c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/dupa.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/dupa.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/dupa.html.twig" />
     </list>
     <ignored path="sklep-komputerowy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/dupa.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -286,7 +286,7 @@
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/dupa.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
         </state>
       </provider>
