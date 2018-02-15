@@ -1,0 +1,7 @@
+shop_admin_default:
+    resource: "@ShopAdminBundle/Resources/config/routing/default.yml"
+    #prefix:   /
+
+shop_admin_menu:
+    resource: "@ShopAdminBundle/Resources/config/routing/menu.yml"
+    prefix:   /menu

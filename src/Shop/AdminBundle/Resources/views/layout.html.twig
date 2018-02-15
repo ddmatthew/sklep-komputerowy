@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="sklep-komputerowy">
+        <meta name="author" content="mateusz.cichocki@doradigital.pl">
+
+        {% block stylesheet %}
+            <link href="{{ asset('bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+            <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
+            <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+        {% endblock %}
+        <title>Sklep Komputerowy</title>
+    </head>
+
+    {% block container %}
+    <body class="template">
+
+    {% include "ShopAdminBundle:Default:menu.html.twig" %}
+
+        <section class="wrap">
+            <header id="adminbar">
+            <nav class="navbar navbar-default" id="adminbar">
+                <div id="logo"><img src="" alt="logo" class="img-small" /><span>Code-Lab</span></div>
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Komputery <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Laptopy</a></li>
+                                    <li><a href="#">Ultrabooki</a></li>
+                                    <li><a href="#">Komputery PC</a></li>
+                                    <li><a href="#">Tablety</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">All in One</a></li>
+                                    <li><a href="#">Komputery Mac</a></li>
+                                    <li><a href="#">Czytniki e-booków</a></li>
+                                    <li><a href="#">Akcesoria</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sprzęt komputerowy <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Monitory</a></li>
+                                    <li><a href="#">Materiały eksploatacyjne</a></li>
+                                    <li><a href="#">Drukarki</a></li>
+                                    <li><a href="#">Projektory</a></li>
+                                    <li><a href="#">Skanery</a></li>
+                                    <li><a href="#">Głośniki, słuchawki, mikrofony</a></li>
+                                    <li><a href="#">Klawiatury i myszki</a></li>
+                                    <li><a href="#">Oprogramowanie</a></li>
+                                    <li><a href="#">Sieci komputerowe</a></li>
+                                    <li><a href="#">Kable</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Podzespoły PC <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">Ultrabooki</a></li>
+                                    <li><a href="#">Komputery PC</a></li>
+                                    <li><a href="#">Tablety</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">All in One</a></li>
+                                    <li><a href="#">Komputery Mac</a></li>
+                                    <li><a href="#">Czytniki e-booków</a></li>
+                                    <li><a href="#">Akcesoria</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Strefa gracza <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">Ultrabooki</a></li>
+                                    <li><a href="#">Komputery PC</a></li>
+                                    <li><a href="#">Tablety</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">All in One</a></li>
+                                    <li><a href="#">Komputery Mac</a></li>
+                                    <li><a href="#">Czytniki e-booków</a></li>
+                                    <li><a href="#">Akcesoria</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <div class="dropdown pull-right user-profile">
+                                <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img class="img-small" src="{{ asset('images/anonymous.png') }}">ADMIN <span class="glyphicon glyphicon-chevron-down"></span></a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-content">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <img src="{{ asset('images/anonymous.png') }}" alt="Alternate Text" class="img-responsive" />
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <span>Username</span>
+                                                    <p class="text-muted small">Email</p>
+                                                    <div class="divider"></div>
+                                                    <a href="" class="btn btn-primary btn-sm">Zobacz profil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="navbar-footer">
+                                            <div class="navbar-footer-content">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <a href="" class="btn btn-default btn-sm">Ustawienia</a>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <a href="" class="btn btn-default btn-sm pull-right">Wyloguj się</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            </header>
+            <!--
+            <header id="adminbar">
+                <div id="logo"><img src="" alt="logo" class="img-small" /><span>Code-Lab</span></div>
+
+            </header>
+            -->
+            <div class="container">
+                {% block body %}{% endblock %}
+            </div>
+        </section>
+
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery.min.js') }}"></script>
+            <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('js/application.js') }}"></script>
+        {% endblock javascripts %}
+    </body>
+{% endblock container %}
+</html>

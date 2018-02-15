@@ -1,0 +1,3 @@
+log:
+    path:     /
+    defaults: { _controller: "ShopAdminBundle:Menu:index" }

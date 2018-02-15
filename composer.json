@@ -1,40 +1,37 @@
 {
-    "name": "imek/sklep-komputerowy",
-    "license": "proprietary",
+    "name": "symfony/framework-standard-edition",
+    "license": "MIT",
     "type": "project",
+    "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
-        "psr-4": {
-            "AppBundle\\": "src/AppBundle"
-        },
-        "classmap": [
-            "app/AppKernel.php",
-            "app/AppCache.php"
-        ]
+        "psr-4": { 
+		    "AppBundle\\": "src/AppBundle",
+            "Shop\\ProductsBundle\\": "src/Shop/ProductsBundle",
+			"Shop\\AdminBundle\\": "src/Shop/AdminBundle"
+		},
+        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
     "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        },
-        "files": [
-            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
-        ]
+        "psr-4": { "Tests\\": "tests/" },
+        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
     "require": {
         "php": ">=5.5.9",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
+        "happyr/google-api-bundle": "~2.1",
         "incenteev/composer-parameter-handler": "^2.0",
         "sensio/distribution-bundle": "^5.0.19",
         "sensio/framework-extra-bundle": "^3.0.2",
         "symfony/monolog-bundle": "^3.1.0",
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.3.10",
-        "symfony/symfony": "3.3.*",
+        "symfony/symfony": "3.3.4",
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "symfony/phpunit-bridge": "^4.0"
     },
     "scripts": {
         "symfony-scripts": [
@@ -53,6 +50,9 @@
         ]
     },
     "config": {
+        "platform": {
+            "php": "5.5.9"
+        },
         "sort-packages": true
     },
     "extra": {
@@ -65,6 +65,8 @@
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         },
-        "branch-alias": null
+        "branch-alias": {
+            "dev-master": "3.3-dev"
+        }
     }
 }
