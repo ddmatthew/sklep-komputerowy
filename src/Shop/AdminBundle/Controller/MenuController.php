@@ -14,7 +14,7 @@ class MenuController extends Controller
         return $this->render('ShopAdminBundle:Menu:index.html.twig');
     }
 
-    public function newAction(Request $request)
+    public function newGroupAction(Request $request)
     {
         $menu = new MainMenu;
 
@@ -32,8 +32,15 @@ class MenuController extends Controller
             return $this->redirectToRoute('group_new');
         }
 
-        return $this->render('ShopAdminBundle:Menu:new.html.twig', array(
+        return $this->render('ShopAdminBundle:Menu:new_group.html.twig', array(
             'form' => $form->createView(),
+        ));
+    }
+
+    public function newSubgroupAction(Request $request)
+    {
+        return $this->render('ShopAdminBundle:Menu:new_subgroup.html.twig', array(
+            'form' => $form->createView()
         ));
     }
 

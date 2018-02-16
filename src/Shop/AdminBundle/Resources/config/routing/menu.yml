@@ -1,3 +1,7 @@
 group_new:
-    path:     /new
-    defaults: { _controller: "ShopAdminBundle:Menu:new" }
+    path:     /new_group
+    defaults: { _controller: "ShopAdminBundle:Menu:newGroup" }
+
+subgroup_new:
+    path:     /new_subgroup
+        defaults: { _controller: "ShopAdminBundle:Menu:newSubgroup" }
